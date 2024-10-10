@@ -1,0 +1,175 @@
+/*La página debe tener un diseño limpio y profesional, 
+usando colores suaves (tonos de azul y blanco) que transmitan 
+confianza y profesionalismo.
+Los botones deben tener un efecto hover para mejorar 
+la experiencia del usuario.
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F5F5F7;
+}
+
+/*CSS Navbar*/
+.flex-container {
+  /*Plantilla del flex*/
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  background: #03346E;
+  color: #ffff;
+}
+
+/*CSS Navbar*/
+.flex-container a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+/*CSS Navbar*/
+.flex-container a:hover {
+  background: #021526;
+}
+
+/*CSS Navbar*/
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+/*CSS Navbar*/
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+/*CSS Profile card*/
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  border: 1px solid darkgray;
+  perspective: 1000px;
+  margin: auto;
+}
+
+/*CSS Profile card*/
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/*CSS Profile card*/
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/*CSS Profile card*/
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+/*CSS Profile card*/
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/*CSS Profile card*/
+.flip-card-back {
+  background-color: #e7ddc2;
+  color: #021526;
+  transform: rotateY(180deg);
+}
+
+/*CSS Profile card text*/
+h1,
+h2 {
+  padding: 3px;
+  font-family: Georgia;
+}
+
+p {
+  padding: 2px;
+  font-family: Georgia;
+}
+
+/*CSS button*/
+.button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+/*CSS button*/
+.button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+}
+
+/*CSS Comments*/
+div.comments{
+  padding: 2px;
+  margin: 10px 10px 10px 10px;
+  box-shadow: 10px 10px 5px #008CBA;
+  display: inline-block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 350px;
+  height: auto;
+  text-align: center;
+  font-family: Franklin Gothic Medium;
+  font-size: x-large;
+  color: #021526;
+}
+/*CSS Comment text*/
+p.comment-text{
+ color: #021526;
+ font-family: Arial narrow;
+ font-size: large;
+}
+/*CSS Comment date*/
+p.comment-date{
+  color: #021526;
+  font-family: serif;
+  font-size: medium;
+}

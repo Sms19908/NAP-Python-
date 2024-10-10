@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Layout.css'>
+    <script src='main.js'></script>
+  </head>
+  <body>
+    <!----- Navbar= -inicio -Servicios -Perfil del Doctor -Contacto 
+  Usar flexbox-->
+    <nav class="navbar">
+      <ul class="flex-container">
+        <li><a href="#">Docsite</a></li>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Perfil del doctor</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+    <!---Section Perfil del Doctor 
+  Nombre del doctor, Especialidad, Descripcion breve del doctor(exp formacion)
+  Boton de Agendar Cita
+  Usar id type= "name" para el css-->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="/PracticaProgramada1/SegundaParte/img/img_avatar.png" alt="Avatar"
+            style="width: 400px; height: 400px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>Dr.Juan Sandi</h1>
+          <h2>Cirujano plastico</h2>
+          <p>El Dr.Juan Sandi tiene 18 años de experiencia en el area de la cirugia plastica,
+            atendiendo a mas de 100 pacientes que han estado satisfechos con el trabajo tan
+            profesional que ha realizado el doctor en su larga profesion</p>
+          <button class="button">Agendar cita</button>
+        </div>
+      </div>
+    </div>
+    <p><!----separacion para ver mas espacio---></p>
+
+    <!---Section Comentarios de Pacientes
+  Nombre del paciente. 
+  Un comentario breve sobre el doctor.
+  La fecha de la consulta.
+  Organiza las tarjetas con Flexbox para que se distribuyan horizontalmente
+  Aplica el modelo de caja a las tarjetas (márgenes, rellenos, bordes) para un diseño atractivo.
+  -->
+    <div>
+      <div class="comments">Juan Martin Gomez
+        <p class="comment-text">
+          Consulta super profesional siempre consciente de lo mejor para el 
+          paciente y recomendando lo mejor en cada caso previo a la operacion
+          <p class="comment-date">
+            10/12/2019 
+          </p>
+        </p>
+      </div>
+      <div class="comments">Julieta Ramirez Vega
+        <p class="comment-text">
+          Consulta super profesional, trabajo super profesional, de las mejores 
+          explicaiones para todo el proceso de operacion
+          <p class="comment-date">
+            10/07/2008 
+          </p>
+        </p>
+      </div>
+      <div class="comments">Diana Maria Calderon Marin
+        <p class="comment-text">
+          Trabajo super profesional, de los mejores cirujanos con experiencia
+          tuve una recuperacion perfecta post-operacion gracias a las recomendaciones
+          del Dr. Juan Sandi
+          <p class="comment-date">
+            25/03/2010 
+          </p>
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>
