@@ -1,0 +1,1 @@
+1 Compra Supermercado 1 Entradas de cine 1 Parqueo Mall 1 Veterinario 1 Comida en Restaurante mesa para 3 personas 1 Ejercicio Prueba Monto total de contado: ArrayMonto total con impuestos112750Monto de cashback conseguido: 112860Monto final a cancelar: 110000
