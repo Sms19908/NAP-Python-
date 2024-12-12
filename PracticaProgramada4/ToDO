@@ -1,0 +1,8 @@
+La aplicación de tareas que hemos venido desarrollando necesita continuar evolucionando, por esta razón en esta práctica programada vamos a crear el backend
+ y el API del CRUD de comentarios.
+
+Debemos crear las funciones necesarias para agregar, actualizar, eliminar y listar los comentarios de una tarea, además, debemos programar los métodos POST, 
+GET, DELETE y PUT para aceptar la comunicación desde el FrontEnd, debe asegurarse de que exista una sesión activa para darle seguridad a la aplicación.
+
+
+php -S localhost:8000

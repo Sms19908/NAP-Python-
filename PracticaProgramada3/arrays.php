@@ -67,7 +67,7 @@ function generarEstadoDeCuenta()
 
     $totalF = $totalI - $cashback;
 
-    generarTxt($transactions, $prices, $totalC, $totalF, $totalI, $cashback);
+    generarTxt($transactions, $prices, $totalC, $totalF, $totalI);
 
 }
 
